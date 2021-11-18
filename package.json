@@ -1,18 +1,51 @@
 {
-  "name": "next-netlify-starter",
+  "name": "videas.me",
   "version": "0.5.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 6969",
     "build": "next build",
+    "start": "next start",
     "export": "next export"
   },
   "dependencies": {
-    "next": "^12.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "@apollo/client": "^3.2.2",
+    "@apollo/react-hooks": "^4.0.0",
+    "@reduxjs/toolkit": "^1.4.0",
+    "@types/bcrypt": "^3.0.0",
+    "@types/body-parser": "^1.19.0",
+    "@types/cookie": "^0.4.0",
+    "@types/js-cookie": "^2.2.6",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/react-redux": "^7.1.9",
+    "@types/styled-components": "^5.1.3",
+    "@types/toastr": "^2.1.38",
+    "apollo-mocked-provider": "^4.0.1",
+    "axios": "^0.20.0",
+    "babel-plugin-styled-components": "^1.11.1",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie": "^0.4.1",
+    "cors": "^2.8.5",
+    "dayjs": "^1.9.1",
+    "graphql": "^15.3.0",
+    "graphql-request": "^3.1.0",
+    "js-cookie": "^2.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "next": "9.5.3",
+    "react": "16.13.1",
+    "react-content-loader": "^5.1.2",
+    "react-dom": "16.13.1",
+    "react-hook-form": "^6.9.2",
+    "react-redux": "^7.2.1",
+    "react-toast-notifications": "^2.4.0",
+    "styled-components": "^5.2.0",
+    "toastr": "^2.1.4"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.0.0-beta.4"
+    "@netlify/plugin-nextjs": "^4.0.0-beta.4",
+    "@types/node": "^14.11.2",
+    "@types/react": "^16.9.50",
+    "typescript": "^4.0.3"
   }
 }
