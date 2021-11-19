@@ -2,6 +2,7 @@ import React from 'react';
 
 import FeatherIcon from 'feather-icons-react';
 
+import { TFeedItem } from '../types/TfeedItem';
 import { getFeed } from '../utils/misc';
 
 interface FeedItemProps {
@@ -13,16 +14,6 @@ interface FeedItemProps {
   shares: string;
   tips: string;
 }
-
-type TFeedItem = {
-  id: string;
-  src: string;
-  title: string;
-  content: string;
-  likes: string;
-  shares: string;
-  tips: string;
-};
 
 const FeedItem: React.FC<FeedItemProps> = ({
   id,

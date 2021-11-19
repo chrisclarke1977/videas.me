@@ -1,3 +1,5 @@
+import { TFeedItem } from '../types/TfeedItem';
+
 export function randNum(): string {
   return `${Math.floor(Math.random() * 10000)}`;
 }
@@ -21,7 +23,7 @@ export function randSrc(): string {
   )}`;
 }
 
-export function getFeed() {
+export function getFeed(): TFeedItem {
   return {
     id: randId(),
     title: 'Hello world',
