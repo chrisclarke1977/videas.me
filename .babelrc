@@ -1,17 +1,12 @@
 {
-  "presets": [    "@babel/preset-typescript",
+  "presets": [
     [
-      "@babel/preset-env",
+      "next/babel",
       {
-        "targets": {
-          "node": true
+        "styled-jsx": {
+          "plugins": ["styled-jsx-plugin-postcss"]
         }
       }
-    ]],
-  "plugins": [
-    [
-      "styled-components",
-      { "ssr": true, "displayName": true, "preprocess": false }
     ]
   ]
 }
