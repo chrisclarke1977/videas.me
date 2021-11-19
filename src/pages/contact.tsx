@@ -60,10 +60,10 @@ const Contact = () => {
               <textarea id="message" name="message" required></textarea>
             </label>
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center"
+              className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded inline-flex items-center"
               type="submit"
             >
-              <FeatherIcon className="fill-current w-6 h-6 mr-2" icon="send" />
+              <FeatherIcon className="w-6 h-6 mr-2" icon="send" />
               Submit
             </button>
           </form>
