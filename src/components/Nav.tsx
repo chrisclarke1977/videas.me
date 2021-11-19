@@ -16,6 +16,14 @@ const Nav = () => {
           </Link>
         </li>
         <li className="mr-6">
+          <Link href="/contact/">
+            <a className="text-gray-700 border-none hover:text-gray-900">
+              <FeatherIcon icon="mail" />
+              Contact Us
+            </a>
+          </Link>
+        </li>
+        <li className="mr-6">
           <Link href="/about/">
             <a className="text-gray-700 border-none hover:text-gray-900">
               <FeatherIcon icon="help-circle" />
@@ -31,6 +39,14 @@ const Nav = () => {
             <FeatherIcon icon="github" />
             GitHub
           </a>
+        </li>
+        <li className="mr-6">
+          <Link href="/login/">
+            <a className="text-gray-700 border-none hover:text-gray-900">
+              <FeatherIcon icon="key" />
+              Login
+            </a>
+          </Link>
         </li>
       </ul>
     </div>
