@@ -1,8 +1,6 @@
 import React, { ReactNode } from 'react';
 
-import FeatherIcon from 'feather-icons-react';
-import Link from 'next/link';
-
+import Nav from '../components/Nav';
 import { AppConfig } from '../utils/AppConfig';
 
 type IMainProps = {
@@ -14,42 +12,14 @@ const Main = (props: IMainProps) => (
   <div className="antialiased w-full text-gray-700 px-1">
     {props.meta}
 
-    <div className="max-w-screen-md mx-auto">
+    <div className="max-w-screen-lg mx-auto">
       <div className="border-b border-gray-300">
+        <Nav />
         <div className="pt-16 pb-8">
           <div className="font-bold text-3xl text-gray-900">
             {AppConfig.title}
           </div>
           <div className="text-xl">{AppConfig.description}</div>
-        </div>
-        <div>
-          <ul className="flex flex-wrap text-xl">
-            <li className="mr-6">
-              <Link href="/">
-                <a className="text-gray-700 border-none hover:text-gray-900">
-                  <FeatherIcon icon="home" />
-                  Home
-                </a>
-              </Link>
-            </li>
-            <li className="mr-6">
-              <Link href="/about/">
-                <a className="text-gray-700 border-none hover:text-gray-900">
-                  <FeatherIcon icon="help-circle" />
-                  About
-                </a>
-              </Link>
-            </li>
-            <li className="mr-6">
-              <a
-                className="text-gray-700 border-none hover:text-gray-900"
-                href="https://github.com/chrisclarke1977/videas.me"
-              >
-                <FeatherIcon icon="github" />
-                GitHub
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
 
