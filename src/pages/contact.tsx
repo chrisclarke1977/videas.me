@@ -1,5 +1,6 @@
 import React from 'react';
 
+import FeatherIcon from 'feather-icons-react';
 import { useRouter } from 'next/router';
 
 import { Meta } from '../layout/Meta';
@@ -58,7 +59,11 @@ const Contact = () => {
               <span className="text-gray-700">Message *</span>
               <textarea id="message" name="message" required></textarea>
             </label>
-            <button className="bg-blend-saturation" type="submit">
+            <button
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center"
+              type="submit"
+            >
+              <FeatherIcon className="fill-current w-6 h-6 mr-2" icon="send" />
               Submit
             </button>
           </form>
