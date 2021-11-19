@@ -2,11 +2,42 @@ import React from 'react';
 
 import FeatherIcon from 'feather-icons-react';
 
-const FeedItem = ({ src, title, content, likes, shares, tips }) => {
+import { getFeed } from '../utils/misc';
+
+interface FeedItemProps {
+  id: string;
+  src: string;
+  title: string;
+  content: string;
+  likes: string;
+  shares: string;
+  tips: string;
+}
+
+type TFeedItem = {
+  id: string;
+  src: string;
+  title: string;
+  content: string;
+  likes: string;
+  shares: string;
+  tips: string;
+};
+
+const FeedItem: React.FC<FeedItemProps> = ({
+  id,
+  src,
+  title,
+  content,
+  likes,
+  shares,
+  tips,
+}) => {
   return (
     <a className="block overflow-hidden shadow-xl rounded-3xl" href="">
       <img className="object-cover w-full h-64" src={src} alt={title} />
       <div className="relative w-full p-6 -mt-8 bg-white rounded-3xl">
+        <p>{id}</p>
         <h5 className="text-xl font-bold text-gray-900">{title}</h5>
         <p className="hidden mt-2 text-gray-500 sm:block">{content}</p>
         <dl className="items-center mt-6 sm:flex">
@@ -54,16 +85,16 @@ const FeedItem = ({ src, title, content, likes, shares, tips }) => {
 };
 
 const Feeds = () => {
+  const feedItems: TFeedItem[] = [];
+  for (let i: number = 0; i < 160; i += 1) {
+    feedItems.push(getFeed());
+  }
+
   return (
     <div className="w-full">
-      <FeedItem
-        title="Hello world"
-        content="more about the world of this card item"
-        src="https://www.hyperui.dev/code/photos/university-3.jpeg"
-        likes="2000"
-        shares="4000"
-        tips="$25.45"
-      />
+      {feedItems.map((feedItem) => (
+        <FeedItem key={feedItem.id} {...feedItem} />
+      ))}
     </div>
   );
 };
