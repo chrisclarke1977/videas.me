@@ -18,7 +18,10 @@ const Index = () => {
         />
       }
     >
-      <Video src={`${router.basePath}/assets/videos/intro.mp4`} width={800} />
+      <Video
+        className="w-full"
+        src={`${router.basePath}/assets/videos/intro.mp4`}
+      />
     </Main>
   );
 };
