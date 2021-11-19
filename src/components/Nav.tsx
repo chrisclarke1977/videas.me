@@ -9,41 +9,49 @@ const Nav = () => {
       <ul className="flex flex-wrap text-xl">
         <li className="mr-6">
           <Link href="/">
-            <a className="text-gray-700 border-none hover:text-gray-900">
-              <FeatherIcon icon="home" />
+            <a className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded inline-flex items-center">
+              <FeatherIcon className="w-6 h-6 mr-2" icon="home" />
               Home
             </a>
           </Link>
         </li>
         <li className="mr-6">
           <Link href="/contact/">
-            <a className="text-gray-700 border-none hover:text-gray-900">
-              <FeatherIcon icon="mail" />
+            <a className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded inline-flex items-center">
+              <FeatherIcon className="w-6 h-6 mr-2" icon="mail" />
               Contact Us
             </a>
           </Link>
         </li>
         <li className="mr-6">
           <Link href="/about/">
-            <a className="text-gray-700 border-none hover:text-gray-900">
-              <FeatherIcon icon="help-circle" />
+            <a className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded inline-flex items-center">
+              <FeatherIcon className="w-6 h-6 mr-2" icon="help-circle" />
               About
             </a>
           </Link>
         </li>
         <li className="mr-6">
+          <Link href="/plans/">
+            <a className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded inline-flex items-center">
+              <FeatherIcon className="w-6 h-6 mr-2" icon="help-circle" />
+              Plans
+            </a>
+          </Link>
+        </li>
+        <li className="mr-6">
           <a
-            className="text-gray-700 border-none hover:text-gray-900"
+            className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded inline-flex items-center"
             href="https://github.com/chrisclarke1977/videas.me"
           >
-            <FeatherIcon icon="github" />
+            <FeatherIcon className="w-6 h-6 mr-2" icon="github" />
             GitHub
           </a>
         </li>
         <li className="mr-6">
           <Link href="/login/">
-            <a className="text-gray-700 border-none hover:text-gray-900">
-              <FeatherIcon icon="key" />
+            <a className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded inline-flex items-center">
+              <FeatherIcon className="w-6 h-6 mr-2" icon="key" />
               Login
             </a>
           </Link>

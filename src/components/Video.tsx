@@ -1,13 +1,14 @@
 import React from 'react';
 
 interface VideoProps {
+  className: string;
   src: string;
-  width: number;
+  width?: string;
 }
 
-const Video: React.FC<VideoProps> = ({ src, width }) => {
+const Video: React.FC<VideoProps> = ({ className, src, width = '100%' }) => {
   return (
-    <video width={width}>
+    <video className={className} width={width}>
       <source src={src} type="video/mp4"></source>
     </video>
   );
