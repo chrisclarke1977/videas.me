@@ -1,5 +1,7 @@
 import React, { ReactNode } from 'react';
 
+import Script from 'next/script';
+
 import { AppConfig } from '../utils/AppConfig';
 
 type IFullProps = {
@@ -9,6 +11,7 @@ type IFullProps = {
 
 const Full = (props: IFullProps) => (
   <>
+    <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
     <div className="antialiased w-full text-gray-700 px-1">
       {props.meta}
 
