@@ -15,7 +15,8 @@ const PlansPage = () => {
               Choose a plan
             </h2>
             <p className="text-lg text-gray-800">
-              The quick brown fox jumps over the lazy dog.
+              We have a number of plan options to help you to get started on
+              your videas journey.
             </p>
           </div>
           <div className="max-w-6xl mx-auto">
