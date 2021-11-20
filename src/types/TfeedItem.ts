@@ -1,9 +1,10 @@
 export type TFeedItem = {
-  id: string;
-  src: string;
-  title: string;
   content: string;
+  href: string;
+  id: string;
   likes: string;
   shares: string;
+  src: string;
   tips: string;
+  title: string;
 };

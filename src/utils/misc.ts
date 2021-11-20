@@ -1,4 +1,6 @@
 import { TFeedItem } from '../types/TfeedItem';
+import { avatars } from './avatars';
+import { twhandles } from './twhandles';
 
 export function randNum(): string {
   return `${Math.floor(Math.random() * 10000)}`;
@@ -17,17 +19,24 @@ export function randId(): string {
   return result;
 }
 
+// export function randSrc(): string {
+//   return `https://placeimg.com/640/480/people/${Math.floor(
+//     Math.random() * 120
+//   )}`;
+// }
 export function randSrc(): string {
-  return `https://placeimg.com/640/480/people/${Math.floor(
-    Math.random() * 120
-  )}`;
+  return avatars[Math.floor(Math.random() * avatars.length)] || '';
+}
+export function randRef(): string {
+  return twhandles[Math.floor(Math.random() * twhandles.length)] || '';
 }
 
-export function getFeed(): TFeedItem {
+export function getFeed(feedId): TFeedItem {
   return {
     id: randId(),
-    title: 'Hello world',
+    title: `Hello world - ${feedId}`,
     content: 'more about the world of this card item',
+    href: randRef(),
     src: randSrc(),
     likes: randNum(),
     shares: randNum(),

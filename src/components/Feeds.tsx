@@ -3,29 +3,31 @@ import React from 'react';
 import FeatherIcon from 'feather-icons-react';
 
 import { TFeedItem } from '../types/TfeedItem';
-import { getFeed } from '../utils/misc';
+import { getFeed, randId } from '../utils/misc';
 
 interface FeedItemProps {
-  id: string;
-  src: string;
-  title: string;
   content: string;
+  href: string;
+  id: string;
   likes: string;
   shares: string;
+  src: string;
   tips: string;
+  title: string;
 }
 
 const FeedItem: React.FC<FeedItemProps> = ({
-  id,
-  src,
-  title,
   content,
+  href,
+  id,
   likes,
   shares,
+  src,
   tips,
+  title,
 }) => {
   return (
-    <a className="block overflow-hidden shadow-xl rounded-3xl" href="">
+    <a className="block overflow-hidden shadow-xl rounded-3xl" href={href}>
       <img className="object-cover w-full h-64" src={src} alt={title} />
       <div className="relative w-full p-6 -mt-8 bg-white rounded-3xl">
         <p>{id}</p>
@@ -78,7 +80,7 @@ const FeedItem: React.FC<FeedItemProps> = ({
 const Feeds = () => {
   const feedItems: TFeedItem[] = [];
   for (let i: number = 0; i < 160; i += 1) {
-    feedItems.push(getFeed());
+    feedItems.push(getFeed(randId()));
   }
 
   return (
