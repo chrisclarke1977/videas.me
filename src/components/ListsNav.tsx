@@ -7,7 +7,6 @@ const ListsNav = () => {
     <div>
       <ul className="flex flex-wrap text-xl">
         <NavLink href="/" icon="home" title="Home" />
-        <NavLink href="/lists/anime/" icon="key" title="Anime" />
         <NavLink href="/lists/avn/" icon="key" title="AVN" />
         <NavLink href="/lists/fansly/" icon="key" title="Fansly" />
         <NavLink
