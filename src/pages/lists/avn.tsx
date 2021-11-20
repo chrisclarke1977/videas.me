@@ -3,7 +3,7 @@ import React from 'react';
 import Login from '../../components/Login';
 import { Meta } from '../../layout/Meta';
 import { Lists } from '../../templates/Lists';
-import { avnnodupes } from '../../utils/avnhandle';
+import { avnhandle } from '../../utils/avnhandle';
 
 const AvnPage = () => {
   return (
@@ -21,7 +21,7 @@ const AvnPage = () => {
 
         <div className="relative w-full h-64 sm:h-96 lg:w-1/2 lg:h-auto">
           <ul>
-            {avnnodupes.sort().map((handle) => (
+            {avnhandle.sort().map((handle) => (
               <li key={handle}>
                 <a href={handle}>{handle}</a>
               </li>

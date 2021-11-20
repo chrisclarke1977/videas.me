@@ -546,7 +546,3 @@ export const twhandles: string[] = [
   'https://twitter.com/zexyfilth',
   'https://twitter.com/zuzusweetxxx',
 ];
-
-export const twnodups: string[] = twhandles.filter(
-  (item, index) => twhandles.indexOf(item) !== index
-);

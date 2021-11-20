@@ -137,7 +137,3 @@ export const pornhubhandles: string[] = [
   'https://pornhub.com/model/winter-rae',
   'https://pornhub.com/model/yourdreamcouple',
 ];
-
-export const phnodups: string[] = pornhubhandles.filter(
-  (item, index) => pornhubhandles.indexOf(item) !== index
-);

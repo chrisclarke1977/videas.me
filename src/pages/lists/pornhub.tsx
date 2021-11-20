@@ -3,7 +3,7 @@ import React from 'react';
 import Login from '../../components/Login';
 import { Meta } from '../../layout/Meta';
 import { Lists } from '../../templates/Lists';
-import { phnodups } from '../../utils/pornhubhandles';
+import { pornhubhandles } from '../../utils/pornhubhandles';
 
 const PornhubPage = () => {
   return (
@@ -24,7 +24,7 @@ const PornhubPage = () => {
 
         <div className="relative w-full h-64 sm:h-96 lg:w-1/2 lg:h-auto">
           <ul>
-            {phnodups.sort().map((handle) => (
+            {pornhubhandles.sort().map((handle) => (
               <li key={handle}>
                 <a href={handle}>{handle}</a>
               </li>

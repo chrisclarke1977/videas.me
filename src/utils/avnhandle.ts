@@ -103,7 +103,3 @@ export const avnhandle: string[] = [
   'https://stars.avn.com/xsamsinghx',
   'https://stars.avn.com/xsamsinghx',
 ];
-
-export const avnnodupes: string[] = avnhandle.filter(
-  (item, index) => avnhandle.indexOf(item) !== index
-);

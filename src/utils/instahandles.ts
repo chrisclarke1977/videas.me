@@ -476,7 +476,3 @@ export const instahandles: string[] = [
   'https://instagram.com/zexyfilth',
   'https://instagram.com/zuzusweet_only',
 ];
-
-export const instanodupes: string[] = instahandles.filter(
-  (item, index) => instahandles.indexOf(item) !== index
-);
