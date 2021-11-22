@@ -25,6 +25,7 @@ const ListsNav = () => {
               title="Instagram"
             />
             <NavLink href="/lists/pornhub/" icon="key" title="Pornhub" />
+            <NavLink href="/lists/referals/" icon="key" title="referals" />
             <NavLink href="/lists/twitter/" icon="key" title="Twitter" />
           </>
         )}
