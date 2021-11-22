@@ -51,7 +51,7 @@ const User: React.FC<UserProps> = ({
 
             <span className="flex ml-3 text-sm font-medium text-gray-600 space-x-1 space-x-reverse">
               <dt>Likes</dt>
-              <dd className="order-first">{infos[1]}</dd>
+              <dd className="order-first">{infos && infos[1]}</dd>
             </span>
           </div>
 
@@ -64,7 +64,7 @@ const User: React.FC<UserProps> = ({
 
             <span className="flex ml-3 text-sm font-medium text-gray-600 space-x-1 space-x-reverse">
               <dt>Shares</dt>
-              <dd className="order-first">{infos[3]}</dd>
+              <dd className="order-first">{infos && infos[3]}</dd>
             </span>
           </div>
           <div className="flex items-center mt-3 sm:ml-6 sm:mt-0">
@@ -76,7 +76,7 @@ const User: React.FC<UserProps> = ({
 
             <span className="flex ml-3 text-sm font-medium text-gray-600 space-x-1 space-x-reverse">
               <dt>Tips</dt>
-              <dd className="order-first">{infos[7]}</dd>
+              <dd className="order-first">{infos && infos[7]}</dd>
             </span>
           </div>
         </dl>

@@ -9,11 +9,13 @@ const UserProfile = () => {
   const router = useRouter();
   const [activeUser, setActiveUser] = useState();
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [user, setUser] = useState<string>(router.query.user);
+  const [user, setUser] = useState<string>();
 
   useEffect(() => {
-    if (router && router.query) {
-      setUser(router.query.user);
+    if (router && router.query && typeof router.query.user === 'string') {
+      if (typeof router.query.user === 'string') {
+        setUser(router.query.user);
+      }
     }
   }, [router]);
 

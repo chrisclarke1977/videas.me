@@ -780,7 +780,7 @@ export const users: TUser[] = [
     user: 'goddessguzman',
     name: 'GoddessGuzman',
     about:
-      'I love making people happy and my favorite way to make people happy is making them cum💦          🌟PROMO🌟: DM me &apos;ONLYFINDER&apos; for a free video.',
+      'I love making people happy and my favorite way to make people happy is making them cum💦          🌟PROMO🌟: DM me &apos;ONLYFINDER&apos; for a free video.',
     info: [' 183,750  369  331 Price: $4.50 '],
   },
   {
@@ -4505,7 +4505,7 @@ export const users: TUser[] = [
     user: 'andrearosu',
     name: 'Andrea Rosu',
     about:
-      '... NEW VIDEO: &apos;Lesbian Cuckoldress with Mz Kim&apos; You never could please me.   ... (MUSCLE WORSHIP, LESBIAN, WEIGHTLIFTING, KISSING, OIL MASSAGE) **Check your DMs/PTV for this video ... (CUCKOLD, LESBIAN DOMINATION, CHASTITY, VERBAL HUMILIATION, FEMDOM POV) **Check your DMs/PTV for this ...',
+      '... NEW VIDEO: &apos;Lesbian Cuckoldress with Mz Kim&apos; You never could please me.   ... (MUSCLE WORSHIP, LESBIAN, WEIGHTLIFTING, KISSING, OIL MASSAGE) **Check your DMs/PTV for this video ... (CUCKOLD, LESBIAN DOMINATION, CHASTITY, VERBAL HUMILIATION, FEMDOM POV) **Check your DMs/PTV for this ...',
     info: [' 26,803  3445  346 Price: $9.98'],
   },
   {
@@ -5549,7 +5549,7 @@ export const users: TUser[] = [
     user: 'lucindalove',
     name: 'Lucinda_Love',
     about:
-      '...  18+ • UK • Crazy Dog Lady • Cosplayer • Gamer • Sewing • Bipolar • Lesbian Business enquiries: lucindatwitch ...',
+      '...  18+ • UK • Crazy Dog Lady • Cosplayer • Gamer • Sewing • Bipolar • Lesbian Business enquiries: lucindatwitch ...',
     info: [' 44,303  65  1553  157 Price: $15.00'],
   },
   {
@@ -5563,7 +5563,7 @@ export const users: TUser[] = [
     user: 'lucindalovefree',
     name: 'LucindaLoveFree',
     about:
-      '...  18+ • UK • Crazy Dog Lady • Cosplayer • Gamer • Sewing • Bipolar • Lesbian Business enquiries: lucindatwitch ...',
+      '...  18+ • UK • Crazy Dog Lady • Cosplayer • Gamer • Sewing • Bipolar • Lesbian Business enquiries: lucindatwitch ...',
     info: [' 16,739  3,528  383  24 Price: FREE'],
   },
   {
@@ -5966,7 +5966,7 @@ export const users: TUser[] = [
     user: 'nastyabaileys',
     name: 'Nastya Baileys',
     about:
-      '... this babe loves hot lesbian sex 👅👄🍆 ... my hot lesbian with a girlfriend in the style of bdsm! ... 🔥🔥🔥 hot lesbian show on the stage of a closed night club! 👩‍❤️‍💋‍👩 ...',
+      '... this babe loves hot lesbian sex 👅👄🍆 ... my hot lesbian with a girlfriend in the style of bdsm! ... 🔥🔥🔥 hot lesbian show on the stage of a closed night club! 👩‍❤️‍💋‍👩 ...',
     info: [' 12,555  809  357 Price: $9.99'],
   },
   {
@@ -9443,7 +9443,7 @@ export const users: TUser[] = [
     user: 'raindegrey',
     name: 'Rain DeGrey',
     about:
-      '... 🔥 Check out &apos;Best Lesbian Erotica Vol. 5&apos;! ... If you like Erotica, check out Best Lesbian Erotica vol 5!  ...',
+      '... 🔥 Check out &apos;Best Lesbian Erotica Vol. 5&apos;! ... If you like Erotica, check out Best Lesbian Erotica vol 5!  ...',
     info: [' 37,106  2899  904 Price: $9.99'],
   },
   {

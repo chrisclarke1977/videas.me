@@ -5,11 +5,19 @@ import { users } from '../../utils/users';
 
 type Data = {
   message: string;
-  user: TUser;
+  user?: TUser;
 };
 
 export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
-  const searchTerm: string = req.query.user || '';
+  let searchTerm: string = '';
+  if (req.query.user) {
+    const result = req.query.user;
+    if (typeof result === 'string') {
+      searchTerm = result;
+    } else {
+      searchTerm = result.join();
+    }
+  }
   try {
     // Fetch users based on current page * perPage
     const output = users.filter(
