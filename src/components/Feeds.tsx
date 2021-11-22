@@ -27,8 +27,8 @@ const FeedItem: React.FC<FeedItemProps> = ({
   title,
 }) => {
   return (
-    <a className="block overflow-hidden shadow-xl rounded-3xl" href={href}>
-      <img className="object-cover w-full h-64" src={src} alt={title} />
+    <a className="block overflow-hidden shadow-xl rounded-3xl p-4" href={href}>
+      <img className="object-cover w-full h-256" src={src} alt={title} />
       <div className="relative w-full p-6 -mt-8 bg-white rounded-3xl">
         <p>{id}</p>
         <h5 className="text-xl font-bold text-gray-900">{title}</h5>
