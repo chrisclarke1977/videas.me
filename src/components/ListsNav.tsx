@@ -34,3 +34,14 @@ const ListsNav = () => {
 };
 
 export default ListsNav;
+/*
+<li className="mr-6">
+<button
+  onClick={() => setIsLoggedIn(!isLoggedIn)}
+  className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded inline-flex items-center"
+>
+  <FeatherIcon className="w-6 h-6 mr-2" icon="key" />
+  Toggle Login
+</button>
+</li>
+*/
