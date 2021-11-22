@@ -1,25 +1,25 @@
-const fs = require('fs');
+// const fs = require('fs');
 
-const blogPostsFolder = './content/blogPosts';
+// const blogPostsFolder = './content/blogPosts';
 
-const getPathsForPosts = () => {
-  return fs
-    .readdirSync(blogPostsFolder)
-    .map((blogName) => {
-      const trimmedName = blogName.substring(0, blogName.length - 3);
-      return {
-        [`/blog/post/${trimmedName}`]: {
-          page: '/blog/post/[slug]',
-          query: {
-            slug: trimmedName,
-          },
-        },
-      };
-    })
-    .reduce((acc, curr) => {
-      return { ...acc, ...curr };
-    }, {});
-};
+// const getPathsForPosts = () => {
+//   return fs
+//     .readdirSync(blogPostsFolder)
+//     .map((blogName) => {
+//       const trimmedName = blogName.substring(0, blogName.length - 3);
+//       return {
+//         [`/blog/post/${trimmedName}`]: {
+//           page: '/blog/post/[slug]',
+//           query: {
+//             slug: trimmedName,
+//           },
+//         },
+//       };
+//     })
+//     .reduce((acc, curr) => {
+//       return { ...acc, ...curr };
+//     }, {});
+// };
 
 /* eslint-disable import/no-extraneous-dependencies */
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
@@ -44,7 +44,7 @@ module.exports = withBundleAnalyzer({
   async exportPathMap(defaultPathMap) {
     return {
       ...defaultPathMap,
-      ...getPathsForPosts(),
+      // ...getPathsForPosts(),
     };
   },
 });
