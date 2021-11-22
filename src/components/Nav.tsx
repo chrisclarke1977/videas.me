@@ -1,22 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import FeatherIcon from 'feather-icons-react';
-import Link from 'next/link';
 
-const NavLink = ({ href, icon, title }) => {
-  return (
-    <li className="mr-6">
-      <Link href={href}>
-        <a className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded inline-flex items-center">
-          <FeatherIcon className="w-6 h-6 mr-2" icon={icon} />
-          {title}
-        </a>
-      </Link>
-    </li>
-  );
-};
+import { AuthContext } from '../context/authContext';
+import NavLink from './NavLink';
 
 const Nav = () => {
+  const { user, logout, login } = useContext(AuthContext);
+
   return (
     <div>
       <ul className="flex flex-wrap text-xl">
@@ -34,7 +25,11 @@ const Nav = () => {
             GitHub
           </a>
         </li>
-        <NavLink href="/login/" icon="key" title="Login" />
+        {user ? (
+          <NavLink onClick={logout} href="/logout/" icon="key" title="Logout" />
+        ) : (
+          <NavLink onClick={login} href="/login/" icon="key" title="Login" />
+        )}
       </ul>
     </div>
   );
