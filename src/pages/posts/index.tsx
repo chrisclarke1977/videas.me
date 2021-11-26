@@ -6,6 +6,7 @@ import CreateUser from '../../components/CreateUser';
 import FakeLogin from '../../components/FakeLogin';
 
 import { Meta } from '../../layout/Meta';
+import { RootState } from '../../store/configureStore';
 import { Main } from '../../templates/Main';
 
 const PostsPage = () => {

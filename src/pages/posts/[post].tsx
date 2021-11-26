@@ -7,6 +7,7 @@ import { Main } from '../../templates/Main';
 import { Meta } from '../../layout/Meta';
 import { loadPost, loadedPost } from '../../actions/posts';
 import Alert from '../../components/Alert';
+import { RootState } from '../../store/configureStore';
 
 // FIXME: make sure post loads 
 

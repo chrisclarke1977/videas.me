@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { loadedPostsAction, loadingPostsAction } from '../actions/posts';
+import { RootState } from '../store/configureStore';
 import Alert from './Alert';
 import Post from './Post';
 
