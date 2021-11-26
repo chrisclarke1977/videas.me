@@ -1,10 +1,15 @@
 import React from 'react';
-
+import { useSelector } from 'react-redux';
+import { RootState } from '../store/configureStore';
 import Login from '../components/Login';
 import { Meta } from '../layout/Meta';
 import { Full } from '../templates/Full';
 
 const LoginPage = () => {
+  const state = useSelector((state: RootState) => {
+    state
+  });
+  
   return (
     <Full
       meta={<Meta title="Videas.me login" description="videas.me login." />}
@@ -13,6 +18,7 @@ const LoginPage = () => {
         <div className="flex items-center w-full px-4 py-12 lg:w-1/2 sm:px-6 lg:px-8 sm:py-16 lg:py-24 lg:h-screen lg:items-center">
           <div className="max-w-lg mx-auto text-center lg:text-left lg:pr-12">
             <Login />
+            <p>{JSON.stringify(state)}</p>
           </div>
         </div>
 
